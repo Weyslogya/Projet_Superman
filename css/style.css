@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Lobster;
+    src: url(./Lobster/Lobster-Regular.ttf);
+}
 /* reset css */
 html{
     font-size: 62.5%;
+    background-color: var(--color-background);
 }
 body{
     font: 1.6rem "Montserrat", sans-serif;
@@ -20,17 +25,81 @@ h1,h2,h3,p,ul{
 
 /* Thèmes */
 :root{
-    --color-default: #095581;
+    --color-header: #095581;
     --color-main: #e9e9e9;
     --color-list: #17264d;
+    --color-background: #5980e4;
+}
+
+h1, h2{
+    font-family: Lobster;
+}
+h2{
+    font-size: 3.0rem;
 }
 header{
-
+    background-color: var(--color-header);
+    line-height: 9.5rem;
 }
-
 main{
     max-width: 80rem;
     margin: 0 auto;
     border: solid .1rem transparent;
-    padding: 0.3rem;
+    padding: 0rem;
+}
+header h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3.8rem;
+}
+main section{
+    background-color: #fff;
+}
+section h2{
+    color: var(--color-header);
+}
+#presentation{
+    padding-top: 0.8rem;
+    margin-top: 1.0rem;
+}
+#presentation h2{
+    margin: 1.0rem;
+}
+#presentation p{
+    font-size: 1.0rem;
+    font-family: Tahoma;
+    padding: 0.9rem;
+    font-size: 75% ;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+figure{
+    margin: 0.9rem;
+    padding: 0.5rem;
+}
+#presentation figure p{
+    font-size: 1.7rem;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: left;
+}
+figure img{
+    display: block;
+    min-width: 100%;    
+}
+figure figcaption h2, p{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+figure figcaption .description{
+    text-align: center;
+}
+ul li{
+    background-color: var(--color-list);
+    margin: 0.3rem;
+    padding: 0.5rem;
+}
+#info{
+    
 }
