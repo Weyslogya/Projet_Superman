@@ -7,13 +7,17 @@
     <meta name="description" content="Superman">
     <title>Superman</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 </head>
 <body>
     <header>
-        <h1>La sémantique html5</h1>
+        <h1>La sémantique html<sup>5</sup></h1>
     </header>
     <main>
-        <section id="presentation">
+        <section id="presentation" class="block">
             <div>
             <h2 class="comics">-Les comics dc-</h2>
             <p class="texte">
@@ -30,7 +34,7 @@
             <figure>
                 <h2 class="hero">-Superman le retour-</h2>
                 <p>Hello world fine ?</p>
-                <img src="./asset/superman.jpg" alt="Superman">
+                <img src="./asset/superman.jpg" alt="Superman" loading="lazy">
                 <figcaption>
                     <h2 class="description">-Description-</h2>
                     <p>Plus vite que la lumière et au delà</p>
@@ -43,15 +47,17 @@
                 </figcaption>
             </figure>
         </section>
-        <section id="info">
+        <section id="whishlist" class="block">
             <p>Choisissez votre comics dans la liste</p>
-                <input type="submit" value="Rechercher" id="search">
-                <input type="submit" value="VIDER LE PANIER" id="drop">
-                <input type="submit" value="AJOUTER AU PANIER" id="add">
+                <div class="liste">
+                    <button class="search" aria-label="search">Rechercher &raquo;</button>
+                    <button class="drop" aria-label="vider"><span aria-hidden="true" class="cross">&#10060;</span>VIDER LE PANIER</button>
+                    <button class="add" aria-label="ajouter"> <span aria-hidden="true">&#10133;</span>AJOUTER AU PANIER</button>
+                </div>
         </section>
     </main>
-    <footer>
-        <p>&copy -MIT - 2021</p>
+    <footer class="block">
+        <p>&copy - MIT - <time>2023</time></p>
     </footer>
 </body>
 </html>
