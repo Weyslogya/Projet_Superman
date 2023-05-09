@@ -30,6 +30,15 @@ img{
     vertical-align: middle;
     object-fit: cover;
 }
+button{
+    color: #fff;
+    padding-inline: 5rem;
+    border-width: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    line-height: 4rem;    
+}
 /* Thèmes */
 :root{
     --color-header: #005A78;
