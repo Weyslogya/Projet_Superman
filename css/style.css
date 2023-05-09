@@ -2,6 +2,7 @@
     font-family: Lobster;
     src: url(./Lobster/Lobster-Regular.ttf);
 }
+
 /* reset css */
 html{
     font-size: 62.5%;
@@ -101,7 +102,7 @@ ul li{
 #whishlist{
     padding: 0.8rem;
 }
-#whishlist p{
+#whishlist h3{
     text-align: center;
     margin: 0.8rem;
 }
